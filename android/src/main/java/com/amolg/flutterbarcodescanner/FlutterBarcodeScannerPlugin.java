@@ -29,6 +29,7 @@ import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
 import io.flutter.plugin.common.MethodChannel.Result;
 import io.flutter.plugin.common.PluginRegistry;
 import io.flutter.plugin.common.PluginRegistry.ActivityResultListener;
+import io.flutter.plugin.common.PluginRegistry.Registrar;
 import io.flutter.plugin.common.EventChannel.StreamHandler;
 import io.flutter.embedding.engine.plugins.lifecycle.FlutterLifecycleAdapter;
 
@@ -73,7 +74,7 @@ public class FlutterBarcodeScannerPlugin implements MethodCallHandler, ActivityR
     }
 
     /**
-     * Plugin registration.
+     * Plugin registration for v1 embedding.
      */
     public static void registerWith(final PluginRegistry.Registrar registrar) {
         if (registrar.activity() == null) {
