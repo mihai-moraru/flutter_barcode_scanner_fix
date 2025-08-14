@@ -1,9 +1,4 @@
-allprojects {
-    repositories {
-        google()
-        mavenCentral()
-    }
-}
+buildscript {}
 
 rootProject.buildDir = '../build'
 subprojects {
